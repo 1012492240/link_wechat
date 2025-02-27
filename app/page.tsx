@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { WeChatButton } from './components/WeChatButton'; // 确保按钮组件是客户端组件
+import { TestTokenButton } from './components/TestTokenButton';
 
 export const metadata: Metadata = {
   title: '微信跳转页面 - 快速打开微信客户端',
@@ -26,6 +27,8 @@ export default function Home() {
 
       {/* 使用客户端组件处理点击事件 */}
       <WeChatButton />
+
+      <TestTokenButton />
     </div>
   );
 }
