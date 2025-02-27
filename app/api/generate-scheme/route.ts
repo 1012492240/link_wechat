@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server';
 
-export async function POST(request: Request) {
+export async function POST() {
     try {
         // 从请求中获取参数
 
 
         // 先获取access_token
-        let access_token = '89_kyLVsg2FvGYc7mTuCUqOBR1qP9BYQZ10QHhaKishu8a_lHyfylTQFRZTzVAaYId3zgwcB8wuGUU6PkhycwnCYkSOCXeQk_gFKMpMhEhVVFhyr0ro48B3mkXBgAMRTAaAIAHJQ'
+        const access_token = '89_kyLVsg2FvGYc7mTuCUqOBR1qP9BYQZ10QHhaKishu8a_lHyfylTQFRZTzVAaYId3zgwcB8wuGUU6PkhycwnCYkSOCXeQk_gFKMpMhEhVVFhyr0ro48B3mkXBgAMRTAaAIAHJQ'
 
         // 构造微信请求
         const wxResponse = await fetch(`https://api.weixin.qq.com/wxa/generatescheme?access_token=${access_token}`, {
