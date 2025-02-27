@@ -1,6 +1,11 @@
 "use client";
 
+import { useEffect } from "react";
+
 export const WeChatButton = () => {
+    useEffect(() => {
+        window.location.href = 'weixin://dl/business/?t=EEI17FhHPgk';
+    }, []);
     return (
         <a
             href="weixin://"

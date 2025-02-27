@@ -3,8 +3,11 @@ import { WeChatButton } from './components/WeChatButton'; // 确保按钮组件�
 
 
 export const metadata: Metadata = {
-  title: '微信跳转页面 - 快速打开微信客户端',
-  description: '正在为您跳转至微信客户端，若未自动跳转请点击页面中的跳转按钮手动前往微信',
+  title: '隐入智能体',
+  description: '隐入智能体描述',
+  keywords: '智能体, 大语言模型, 问答系统, 专业支持',
+  viewport: 'width=device-width, initial-scale=1.0',
+  robots: 'index, follow',
 };
 
 export default function Home() {
