@@ -1,5 +1,10 @@
-'use client'
-import Image from "next/image";
+import type { Metadata } from 'next';
+import { WeChatButton } from './components/WeChatButton'; // 确保按钮组件是客户端组件
+
+export const metadata: Metadata = {
+  title: '微信跳转页面 - 快速打开微信客户端',
+  description: '正在为您跳转至微信客户端，若未自动跳转请点击页面中的跳转按钮手动前往微信',
+};
 
 export default function Home() {
   return (
@@ -19,17 +24,8 @@ export default function Home() {
         <p className="text-gray-600">如果未自动打开微信请点击下方按钮</p>
       </div>
 
-      {/* 跳转按钮 */}
-      <a
-        href="weixin://"
-        className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"
-        onClick={(e) => {
-          e.preventDefault();
-          window.location.href = 'weixin://';
-        }}
-      >
-        点击前往微信
-      </a>
+      {/* 使用客户端组件处理点击事件 */}
+      <WeChatButton />
     </div>
   );
 }
