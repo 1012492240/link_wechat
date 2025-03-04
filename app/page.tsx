@@ -3,11 +3,9 @@ import { WeChatButton } from './components/WeChatButton'; // 确保按钮组件�
 
 
 export const metadata: Metadata = {
-  title: '隐入智能体',
-  description: '隐入智能体描述',
-  keywords: '智能体, 大语言模型, 问答系统, 专业支持',
-  viewport: 'width=device-width, initial-scale=1.0',
-  robots: 'index, follow',
+  title: '绿生活-点亮每一次消费',
+  description: '点亮每一次消费，成就更美好的生活！',
+
 };
 
 export default function Home() {
