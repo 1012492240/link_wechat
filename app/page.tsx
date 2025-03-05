@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  console.log('微信跳转')
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
       {/* 微信Logo */}
