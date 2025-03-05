@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  console.log('微信跳转221234')
+  console.log('微信跳转2212345')
   console.log('进行跳转微信1234开发');
   console.log('1')
   return (
