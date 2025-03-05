@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 export const WeChatButton = () => {
     useEffect(() => {
-        window.location.href = 'weixin://dl/business/?t=kjH9mxowoqh';
+        window.location.href = 'weixin://dl/business/?t=9vFIPxSFXLr';
     }, []);
     return (
         <a
@@ -12,7 +12,7 @@ export const WeChatButton = () => {
             className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"
             onClick={(e) => {
                 e.preventDefault();
-                window.location.href = 'weixin://dl/business/?t=kjH9mxowoqh';
+                window.location.href = 'weixin://dl/business/?t=9vFIPxSFXLr';
             }}
         >
             点击前往微信
